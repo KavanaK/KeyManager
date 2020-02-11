@@ -1,0 +1,216 @@
+<!--<div class="container">
+
+    <table class="table" style="width:1100px;">
+
+
+        <thead>
+            <tr>
+                <th><input type="checkbox" scope="row"></th>
+                <th scope="col" *ngFor="let tahead of head">{{tahead}}</th>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="checkbox" scope="row"></td>
+                <td>File1key</td>
+                <td>RSA</td>
+                <td><img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(20).jpg" alt="Avatar"
+                        class="md-avatar rounded-circle"> &#160; <img
+                        src="https://mdbootstrap.com/img/Photos/Avatars/img%20(3).jpg" alt="Avatar"
+                        class="md-avatar rounded-circle"></td>
+                <td>12/2/2019</td>
+                <td>50%</td>
+                <td>3 min ago</td>
+
+            </tr>
+            <tr>
+                <td><input type="checkbox" scope="row"></td>
+                <td>File1key</td>
+                <td>RSA</td>
+                <td> <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(20).jpg" alt="Avatar"
+                        class="md-avatar rounded-circle"> &#160; <img
+                        src="https://mdbootstrap.com/img/Photos/Avatars/img%20(3).jpg" alt="Avatar"
+                        class="md-avatar rounded-circle"></td>
+                <td>12/2/2019</td>
+                <td>50%</td>
+                <td>3 min ago</td>
+
+            </tr>
+            <tr>
+                <td><input type="checkbox" scope="row"></td>
+                <td>File1key</td>
+                <td>RSA</td>
+                <td><img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(20).jpg" alt="Avatar"
+                        class="md-avatar rounded-circle"> &#160; <img
+                        src="https://mdbootstrap.com/img/Photos/Avatars/img%20(3).jpg" alt="Avatar"
+                        class="md-avatar rounded-circle"></td>
+                <td>12/2/2019</td>
+                <td>50%</td>
+                <td>3 min ago</td>
+
+            </tr>
+            <tr>
+                <td><input type="checkbox" scope="row"></td>
+                <td>File1key</td>
+                <td>RSA</td>
+                <td><img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(20).jpg" alt="Avatar"
+                        class="md-avatar rounded-circle"> &#160; <img
+                        src="https://mdbootstrap.com/img/Photos/Avatars/img%20(3).jpg" alt="Avatar"
+                        class="md-avatar rounded-circle"></td>
+                <td>12/2/2019</td>
+                <td>50%</td>
+                <td>3 min ago</td>
+
+            </tr>
+            <tr>
+                <td><input type="checkbox" scope="row"></td>
+                <td>File1key</td>
+                <td>RSA</td>
+                <td><img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(20).jpg" alt="Avatar"
+                        class="md-avatar rounded-circle"> &#160; <img
+                        src="https://mdbootstrap.com/img/Photos/Avatars/img%20(3).jpg" alt="Avatar"
+                        class="md-avatar rounded-circle"></td>
+                <td>12/2/2019</td>
+                <td>50%</td>
+                <td>3 min ago</td>
+
+            </tr>
+            <tr>
+                <td><input type="checkbox" scope="row"></td>
+                <td>File1key</td>
+                <td>RSA</td>
+                <td><img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(20).jpg" alt="Avatar"
+                        class="md-avatar rounded-circle"> &#160; <img
+                        src="https://mdbootstrap.com/img/Photos/Avatars/img%20(3).jpg" alt="Avatar"
+                        class="md-avatar rounded-circle"></td>
+                <td>12/2/2019</td>
+                <td>50%</td>
+                <td>3 min ago</td>
+
+            </tr>
+            <tr>
+                <td><input type="checkbox" scope="row"></td>
+                <td>File1key</td>
+                <td>RSA</td>
+                <td><img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(20).jpg" alt="Avatar"
+                        class="md-avatar rounded-circle"> &#160; <img
+                        src="https://mdbootstrap.com/img/Photos/Avatars/img%20(3).jpg" alt="Avatar"
+                        class="md-avatar rounded-circle"></td>
+                <td>12/2/2019</td>
+                <td>50%</td>
+                <td>3 min ago</td>
+
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <td> </td>
+            <td> showing 7 of 50 entries</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>  
+            </td>
+            <td>
+                <ul class="pagination pagination-sm">
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </li>
+                </ul>
+            </td>
+
+
+        </tfoot>
+    </table>-->
+   
+    <div *ngIf="data" class="container">
+        <div *ngIf="false">
+          <input type="text" class="search" placeholder="Search for details">
+        </div>
+        <table class="table" style="width:1100px;">
+          <thead>
+          <tr>
+            <th *ngIf="delete" style="width: 4%">&nbsp;</th>
+            <th>#</th>
+            <th *ngFor="let header of data.headers" >{{header}}</th>
+            <th *ngIf="update">&nbsp;</th>
+          </tr>
+          </thead>
+<!-- [sh-context]="childContextMenu" [sh-data-context]="{entityRef:row,parentRef:this}" [ngClass]="(row.Id === selectedItem?.Id) ? 'selected-item' : ''"-->
+          <tbody>
+          <tr class="" *ngFor="let row of data.data;let set of data.data; let i = index;"[sh-context]="childContextMenu" [sh-data-context]="{entityRef:row,parentRef:this}" [ngClass]="(row.Id === selectedItem?.Id) ? 'selected-item' : ''"  (click)="fireRowClick(row)"(click)="dropdownmenu(set.id)">
+            <td *ngIf="delete"><input type="checkbox" [checked]="checkAll" (change)="selected($event,row.id)"></td>
+            <td>{{ i+1 }}</td>
+            <td *ngFor="let attr of displayed" >{{row[attr]}}</td>
+            <td *ngIf="update" style="text-align:center">
+              <span (click)="showUpdate(row.id)">🖉</span>
+            </td></tr>
+            
+         
+        </tbody>
+     
+     <tfoot>
+      
+        <div class="footer"><!--
+          <div *ngIf="delete" class="delete">
+            <button (click)="deleteSelected()">Delete {{checked.length}} rows</button>
+          </div>-->
+          <tr class="pagination pagination-sm ">
+            <td>
+            <select (change)="pageOnChange(device.value)" #device >
+              <option value="10">10</option>
+              <option value="15">15</option>
+              <option value="20">20</option>
+              <option value="100">100</option>
+            </select>
+             </td>
+             <td>Showing</td> <td>{{page}} </td><td>of</td> <td>{{totalItems()}} </td>
+           <td><button class="link-button" (click)="previousPage()">Previous</button>-</td>
+            <td><button class="link-button" (click)="nextPage()">Next</button>
+            </td>
+        </tr>
+        </div>
+      </tfoot>
+    </table>
+    </div>
+  
+    
+ <!--
+        <div *ngIf="update && dialogue" class="update" (click)="closeDialogue()">
+      
+          <div class="update-box" (click)="$event.stopPropagation()">
+            <h2>Edit the Row</h2>
+            <form #customForm="ngForm" novalidate (ngSubmit)="submitUpdateRow(dialogeData); closeDialogue()">
+              <div class="f-x">
+                <ng-container *ngFor="let attr of displayed; let i = index">
+                  <div *ngIf="attr!='id' " class="f-y">
+                    <label>{{data.headers[i]}}</label>
+                    <input type="text" [value]="dialogeData[attr]" [placeholder]="attr" [name]="attr"
+                           [(ngModel)]="dialogeData[attr]">
+                  </div>
+                </ng-container>
+              </div>
+              <footer>
+                <br>
+                <button type="submit">Update the row</button>
+                <button type="button" (click)="closeDialogue()">Cancel</button>
+              </footer>
+            </form>
+          </div>
+        </div>  -->
+      
+  
+
+      
