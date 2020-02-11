@@ -1,0 +1,24 @@
+<mat-drawer-container class="Wrapper">
+  
+  <mat-drawer mode="side" 
+   class="sidebar" [class.menu-open]="isExpanded"
+   [class.menu-close]="!isExpanded" opened = "true">
+  
+    <h2 *ngIf="isExpanded; else changecontent">Key Manager</h2>
+    <ng-template #changecontent><h2>KM</h2></ng-template>
+    
+    <ul class="sidebaricon">
+      <li class="dashboard"><a (click)="onclick()"><i class="material-icons md-18">dashboard</i><span mat-line *ngIf="isExpanded" >Dashboard</span></a> </li>
+      <li class="generate"><a ><i class="fas fa-equals"></i> <span mat-line *ngIf="isExpanded">Generate Key</span></a></li>
+      <li class="share"><a ><i class="far fa-envelope"></i><span mat-line *ngIf="isExpanded">Share Key</span></a></li>
+      <li class="store"><a routerLink='/custom'><i class="far fa-user"></i><span mat-line *ngIf="isExpanded"> Key store</span></a></li>
+      <li class="setting"><a ><i class="fas fa-ellipsis-h"></i> <span mat-line *ngIf="isExpanded">Settings</span></a></li>
+
+      <li class="toggle"><a (click)="sideclose()"><i class="fas fa-window-maximize fa-rotate-270"></i> <span mat-line *ngIf="isExpanded">Toggle sidebar</span></a></li>
+    </ul>
+  </mat-drawer>
+  <mat-drawer-content><app-nav></app-nav></mat-drawer-content>
+  
+</mat-drawer-container>
+
+<router-outlet></router-outlet>

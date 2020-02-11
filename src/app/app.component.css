@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    
+}
+body {
+    background: grey;
+}
+
+.wrapper{
+    z-index: -1;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    
+   
+}
+ .sidebar{
+    position: fixed;
+    width: 256px;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    background-color: #FFFFFF;
+    box-shadow: 6px 0px 18px rgba(0, 0, 0, 0.06);
+    
+
+}
+.sidebar.menu-close {
+    width: 70px;
+    overflow-y: hidden;
+    
+}
+
+.sidebar.menu-open {
+    width: 256px;
+    
+}
+h2 {
+    position: absolute;
+width: 141px;
+height: 26px;
+left: 24px;
+top: 17px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 25px;
+color: #109CF1;
+
+
+
+}
+.sidebaricon{
+    font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 19px;
+letter-spacing: 0.01em;
+
+color: #334D6E;
+}
+ .dashboard{
+    position: absolute;
+    left: 24px;
+right: 0%;
+top: 20%;
+
+}
+.generate{
+    position: absolute;
+    left: 24px;
+right: 0%;
+top: 25%;
+}
+
+.share{
+    position: absolute;
+    left: 24px;
+right: 0%;
+top: 30%;
+
+}
+.store {
+    position:   absolute;
+    left: 24px;
+right: 0%;
+top: 35%;
+}
+
+.setting{
+    position: absolute;
+left: 24px;
+right: 0%;
+top: 45%;
+
+}
+ .fas  {
+    color: #C2CFE0;
+}
+.far {
+    color: #C2CFE0;
+
+}
+
+i {
+    margin-right: 10px;
+  }
+
+.toggle {
+    position: absolute;
+left: 24px;
+right: 0%;
+bottom: 10%;
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 16px;
+letter-spacing: 0.01em;
+color: #90A0B7;
+}
+
+a {
+    text-decoration: none;
+    text-decoration-color:  #334D6E;
+}
+
+.material-icons {
+    color: #C2CFE0;
+
+
+}
+.material-icons .md-18 {
+    font-size: 18px; 
+}
+
